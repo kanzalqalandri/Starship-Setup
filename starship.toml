@@ -8,15 +8,19 @@ disabled = true
 success_symbol = "[➜](bold green) "
 error_symbol = "[✖](bold red)"
 
-[username]
-style_user = "yellow bold"
-style_root = "red bold"
-format = "($style)"
-disabled = false
-show_always = true
-
 [hostname]
 ssh_only = false
 format =  "[$hostname](bold green) "
 disabled = false
 
+[kubernetes]
+disabled = false
+
+[git_branch]
+symbol = " "
+
+[aws]
+disabled = false
+symbol = " "
+format = "on [$symbol$profile( \\($region\\))]($style) "
+style = "bold yellow"
